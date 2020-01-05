@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\launchAppium_05_01_2020_10_46_51.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\launchAppium_05_01_2020_10_46_51.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\screenshots\launchAppium_05_01_2020_10_46_52.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\screenshots\launchAppium_05_01_2020_10_46_52.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\sampleOperation_05_01_2020_10_47_44.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\sampleOperation_05_01_2020_10_47_44.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\screenshots\sampleOperation_05_01_2020_10_47_45.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\screenshots\sampleOperation_05_01_2020_10_47_45.png' height='100' width='100'/> </a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="183468" started-at="2020-01-05T05:14:45Z" finished-at="2020-01-05T05:17:49Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="183468" started-at="2020-01-05T05:14:45Z" finished-at="2020-01-05T05:17:49Z">
+      <class name="com.appium.testscripts.TC001_HomePageTest">
+        <test-method status="PASS" signature="killAllConnections()[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="killAllConnections" is-config="true" duration-ms="4220" started-at="2020-01-05T10:44:45Z" finished-at="2020-01-05T10:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killAllConnections -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="beforeMethod" is-config="true" duration-ms="96" started-at="2020-01-05T10:44:50Z" finished-at="2020-01-05T10:44:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.appium.testscripts.TC001_HomePageTest.launchAppium()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="appLaunch()[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="appLaunch" is-config="true" duration-ms="118021" started-at="2020-01-05T10:44:50Z" finished-at="2020-01-05T10:46:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method status="PASS" signature="launchAppium()[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="launchAppium" duration-ms="2899" started-at="2020-01-05T10:46:48Z" finished-at="2020-01-05T10:46:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\launchAppium_05_01_2020_10_46_51.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\launchAppium_05_01_2020_10_46_51.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchAppium -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="afterMethod" is-config="true" duration-ms="688" started-at="2020-01-05T10:46:52Z" finished-at="2020-01-05T10:46:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=launchAppium status=SUCCESS method=TC001_HomePageTest.launchAppium()[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6] output=<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\launchAppium_05_01_2020_10_46_51.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\launchAppium_05_01_2020_10_46_51.png' height='100' width='100'/> </a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\screenshots\launchAppium_05_01_2020_10_46_52.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\screenshots\launchAppium_05_01_2020_10_46_52.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-01-05T10:46:52Z" finished-at="2020-01-05T10:46:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.appium.testscripts.TC001_HomePageTest.sampleOperation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="appLaunch()[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="appLaunch" is-config="true" duration-ms="50450" started-at="2020-01-05T10:46:52Z" finished-at="2020-01-05T10:47:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method status="PASS" signature="sampleOperation()[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="sampleOperation" duration-ms="1461" started-at="2020-01-05T10:47:43Z" finished-at="2020-01-05T10:47:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\sampleOperation_05_01_2020_10_47_44.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\sampleOperation_05_01_2020_10_47_44.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sampleOperation -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="afterMethod" is-config="true" duration-ms="678" started-at="2020-01-05T10:47:45Z" finished-at="2020-01-05T10:47:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sampleOperation status=SUCCESS method=TC001_HomePageTest.sampleOperation()[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6] output=<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\sampleOperation_05_01_2020_10_47_44.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\successScreenshots\sampleOperation_05_01_2020_10_47_44.png' height='100' width='100'/> </a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\screenshots\sampleOperation_05_01_2020_10_47_45.png'> <img src='C:\Users\kandu\eclipse-workspace\appium\src\main\java\com\appium\screenshots\sampleOperation_05_01_2020_10_47_45.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.appium.testscripts.TC001_HomePageTest@7a30d1e6]" name="endTest" is-config="true" duration-ms="3199" started-at="2020-01-05T10:47:46Z" finished-at="2020-01-05T10:47:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.appium.testscripts.TC001_HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
