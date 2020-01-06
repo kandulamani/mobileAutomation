@@ -209,3 +209,26 @@
 2020-01-05 10:46:48 INFO  TestBase:177 - Appium session is created
 2020-01-05 10:47:43 INFO  TestBase:177 - Appium session is created
 2020-01-05 10:47:48 INFO  TestBase:331 - Appium session is closed
+2020-01-06 20:41:18 INFO  TestBase:180 - Unable to create Appium session
+2020-01-06 20:53:34 INFO  TestBase:177 - Appium session is created
+2020-01-06 20:54:02 INFO  TestBase:177 - Appium session is created
+2020-01-06 20:54:04 INFO  TestBase:331 - Appium session is closed
+2020-01-06 20:58:24 INFO  TestBase:177 - Appium session is created
+2020-01-06 20:58:47 INFO  TestBase:177 - Appium session is created
+2020-01-06 20:58:51 INFO  TestBase:331 - Appium session is closed
+2020-01-06 21:02:23 INFO  TestBase:177 - Appium session is created
+2020-01-06 21:05:45 INFO  TestBase:177 - Appium session is created
+2020-01-06 21:06:06 INFO  TestBase:177 - Appium session is created
+2020-01-06 21:06:09 INFO  TestBase:331 - Appium session is closed
+2020-01-06 21:09:31 INFO  TestBase:177 - Appium session is created
+2020-01-06 21:09:52 INFO  TestBase:177 - Appium session is created
+2020-01-06 21:09:55 INFO  TestBase:331 - Appium session is closed
+2020-01-06 21:15:27 INFO  TestBase:177 - Appium session is created
+2020-01-06 21:15:49 INFO  TestBase:177 - Appium session is created
+2020-01-06 21:15:51 INFO  TestBase:331 - Appium session is closed
+2020-01-06 21:34:49 INFO  TestBase:173 - Appium session is created
+2020-01-06 21:35:13 INFO  TestBase:173 - Appium session is created
+2020-01-06 21:35:17 INFO  TestBase:327 - Appium session is closed
+2020-01-06 21:41:51 INFO  TestBase:173 - Appium session is created
+2020-01-06 21:42:17 INFO  TestBase:173 - Appium session is created
+2020-01-06 21:42:20 INFO  TestBase:327 - Appium session is closed

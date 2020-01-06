@@ -31,11 +31,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.Markup;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -49,16 +47,15 @@ public class TestBase {
 	Properties OR = new Properties();
 	public static AppiumDriverLocalService appiumDriverLocalService;
 	public static ExtentReports extent;
-	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentTest test;
+	public ITestResult result;
 
 	static {
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")
-				+ "\\src\\main\\java\\com\\appium\\reports\\" + formater.format(calendar.getTime()) + "_Report.html");
-		extent = new ExtentReports();
-		extent.attachReporter(htmlReporter);
+		extent = new ExtentReports(System.getProperty("user.dir") + "\\src\\main\\java\\com\\appium\\reports\\"
+				+ formater.format(calendar.getTime()) + "_Report.html", false);
+
 	}
 
 	public String captureScreen(String fileName, String reportDirectory) {
@@ -90,17 +87,16 @@ public class TestBase {
 		String screen = captureScreen(result.getName(), reportDirectory);
 		try {
 			if (result.getStatus() == ITestResult.SUCCESS) {
-				test.log(Status.PASS, result.getName() + " test is pass");
-				test.log(Status.PASS, (Markup) test.addScreenCaptureFromPath(screen));
+				test.log(LogStatus.PASS, result.getName() + " test is pass");
+				test.log(LogStatus.PASS, test.addScreenCapture(screen));
 			} else if (result.getStatus() == ITestResult.SKIP) {
-				test.log(Status.SKIP,
+				test.log(LogStatus.SKIP,
 						result.getName() + " test is skipped and skip reason is:-" + result.getThrowable());
 			} else if (result.getStatus() == ITestResult.FAILURE) {
-				test.log(Status.ERROR, result.getName() + " test is failed" + result.getThrowable());
-				// String screen = captureScreen("");
-				test.log(Status.FAIL, (Markup) test.addScreenCaptureFromPath(screen));
+				test.log(LogStatus.ERROR, result.getName() + " test is failed" + result.getThrowable());
+				test.log(LogStatus.FAIL, test.addScreenCapture(screen));
 			} else if (result.getStatus() == ITestResult.STARTED) {
-				test.log(Status.INFO, result.getName() + " test is started");
+				test.log(LogStatus.INFO, result.getName() + " test is started");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -135,13 +131,13 @@ public class TestBase {
 
 	@BeforeMethod()
 	public void beforeMethod(Method result) {
-		test = extent.createTest(result.getName());
-		test.log(Status.INFO, result.getName() + " test Started");
+		test = extent.startTest(result.getName());
+		test.log(LogStatus.INFO, result.getName() + " test Started");
 	}
 
 	@AfterClass(alwaysRun = true)
 	public void endTest() {
-		// extent.endTest(test);
+		extent.endTest(test);
 		closeAppTest();
 		appiumStopServer();
 		extent.flush();
