@@ -159,9 +159,10 @@ public class TestBase {
 		PropertyConfigurator.configure("log4j.properties");
 		try {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
-			String device = OR.getProperty("DEVICE_NAME");
+			//String device = OR.getProperty("DEVICE_NAME");
+			String device = System.getProperty("deviceName");
 			if (device.contains("emulator")) {
-				startEmulator();
+				startEmulator(device);//nexusemulator
 			}
 			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, OR.getProperty("AUTOMATION_NAME"));
@@ -212,9 +213,9 @@ public class TestBase {
 
 	}
 
-	public void startEmulator() {
+	public void startEmulator(String batFileName) {
 		try {
-			Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\startEmulator.bat");
+			Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\"+batFileName+".bat");
 			Thread.sleep(4000);
 		} catch (Exception e) {
 			e.printStackTrace();
